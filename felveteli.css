@@ -1,14 +1,19 @@
 body{
   color: #293647;
 }
-
+ 
 .bg-fej {
-
+ 
   background-position: center;
+ 
   height: 400px;
-
+  background-image: url('oktatas-01.jpg'); /* 1pont */
+  background-size: cover;
+   
+ 
+ 
 }
-
+ 
 .bg-fej h1{
   color: black;
   font-size: 250%;
@@ -22,35 +27,65 @@ body{
   text-decoration: underline overline;
   font-weight: bold;
 }
-
+ 
 .container{
   margin-bottom: 25px;
 }
-
+ 
 .bg-torzs {
-
+ 
   align-content: center;
+  background-color: #c5c599; /* 1 pont */
 }
-
+ 
 h3{
   margin: 25px 0px;
 }
-
+ 
 a {
   font-style: italic;
   font-weight: bold;
   color: darkblue;
 }
-
+ 
 #szel, #mag{
   margin: 0px auto 15px;
 }
-
+ 
 #kalkGomb {
   margin: 20px auto;
 }
-
+ 
 #valasz{
   visibility:hidden;
 }
-
+ 
+/* Oszlopokba formázás */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 egyenlő szélességű oszlop */
+ height: 660px;
+ 
+ 
+}
+ 
+.section {
+  background-color:  #c5c599;
+  padding: 20px;
+ 
+}
+.masikoszlop{
+  background-color:  #fff;
+  padding: 20px;
+ 
+}
+ 
+h1, h3, h6 {
+  margin: 10px 0;
+}
+ 
+th, td {
+ 
+  padding: 8px;
+  text-align: left;
+}
